@@ -21,6 +21,10 @@ body{
   0%{transform:translateY(0);}
   100%{transform:translateY(-100vh);}
 }
+.clickArea{
+  width:150px;
+  cursor:pointer;
+}
 
 .card{
   background:white;
@@ -61,3 +65,4 @@ button{
   0%,100%{transform:scale(1);}
   50%{transform:scale(1.2);}
 }
+
