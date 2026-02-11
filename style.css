@@ -67,17 +67,8 @@ button{
 }
 
 
-.fox-area{
-  width: 35%;
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 in one row */
-  gap: 10px;
-}
 
-.fox{
-  width: 100%;
-  max-width: 80px;   /* size control */
-  border-radius: 12px;
+  
 }
 
 
