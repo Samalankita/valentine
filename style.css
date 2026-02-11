@@ -1,0 +1,63 @@
+body{
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg,#ff4d6d,#ff85a1);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  overflow:hidden;
+}
+
+/* floating hearts */
+.heart-float{
+  position:fixed;
+  bottom:-20px;
+  font-size:20px;
+  animation: float 6s linear infinite;
+  opacity:0.7;
+}
+@keyframes float{
+  0%{transform:translateY(0);}
+  100%{transform:translateY(-100vh);}
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  width:330px;
+  position:relative;
+  z-index:10;
+}
+
+h1{ color:#ff4d6d; }
+
+button{
+  padding:12px 20px;
+  border:none;
+  border-radius:30px;
+  font-size:16px;
+  cursor:pointer;
+  margin:10px;
+}
+
+#yesBtn{ background:#ff4d6d; color:white; }
+#noBtn{ background:#ccc; position:absolute; }
+
+.gif{
+  width:180px;
+  border-radius:15px;
+  margin:10px 0;
+}
+
+.heart{
+  font-size:60px;
+  animation: beat 1s infinite;
+}
+@keyframes beat{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.2);}
+}
