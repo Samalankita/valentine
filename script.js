@@ -40,8 +40,11 @@ yesBtn.addEventListener("click", ()=>{
 
   title.innerHTML = "Yayyyy 🥰💖";
   msg.innerHTML = `
-    I knew you would say YES 😘<br>
-    Tum meri duniya ho 💕
+   I knew you would say YES 😘<br>
+    Tumhare saath har din special lagta hai…<br>
+    Aur aaj se tum sirf Valentine nahi,<br>
+    meri duniya ho 💕💫<br><br>
+    I love you 😘💌
   `;
   gif.src = "iilu.gif";
 
@@ -54,3 +57,4 @@ function saveAnswer(ans){
   let url = formBaseURL + ans;
   fetch(url, { mode: "no-cors" });
 }
+
