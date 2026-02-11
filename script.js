@@ -25,6 +25,27 @@ function noClicked(){
   noBtn.style.left = x + "px";
   noBtn.style.top = y + "px";
 }
+function noClicked(){
+  music.play();
+
+  // sad gif
+  gif.src = "sad.gif";   // apni sad gif ka naam yahan do
+
+  // sad message
+  title.innerHTML = "Oh no… 😢";
+  msg.innerHTML = `
+    Dil thoda sa toot gaya 💔<br>
+    Par phir bhi tumhari khushi meri priority hai…<br>
+    Main wait kar sakti hoon 🥺
+  `;
+
+  // move NO button
+  let x = Math.random() * 200;
+  let y = Math.random() * 200;
+  noBtn.style.left = x + "px";
+  noBtn.style.top = y + "px";
+}
+
 
 function yesClicked(){
   title.innerHTML = "Yayyyy 🥰💖";
@@ -42,3 +63,4 @@ function yesClicked(){
   yesBtn.style.display="none";
   noBtn.style.display="none";
 }
+
