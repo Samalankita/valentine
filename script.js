@@ -63,30 +63,22 @@ function yesClicked(){
   yesBtn.style.display="none";
   noBtn.style.display="none";
 }
-// YES button
-function sendYes() {
-  let name = prompt("Apna naam likho 💖");
+window.onload = function(){
+  let name = prompt("Apna naam likho ❤️");
+  let ans = confirm("Kya tum mujhe pasand karte ho?");
 
   let url = "https://docs.google.com/forms/d/e/1FAIpQLSc3GIwb0G2DjjvJgUM8mNkbIJAsZTM0f_e5agrscpauuJmJBw/viewform?usp=pp_url&entry.2089083960=ANKITA&entry.1023733850=yes";
 
-  url = url.replace("test", name).replace("YES", "YES");
+  if(ans){
+    url = url.replace("test", name).replace("YES", "YES");
+  } else {
+    url = url.replace("test", name).replace("YES", "NO");
+  }
 
-  fetch(url, { mode: "no-cors" });
-
-  alert("Tumhara YES save ho gaya 💕");
+  fetch(url, {mode:"no-cors"});
 }
 
-// NO button
-function sendNo() {
-  let name = prompt("Apna naam likho 😔");
 
-  let url = "https://docs.google.com/forms/d/e/1FAIpQLSc3GIwb0G2DjjvJgUM8mNkbIJAsZTM0f_e5agrscpauuJmJBw/viewform?usp=pp_url&entry.2089083960=ANKITA&entry.1023733850=no";
-
-  url = url.replace("test", name).replace("YES", "NO");
-
-  fetch(url, { mode: "no-cors" });
-
-  alert("Tumhara answer save ho gaya 💔");
-}
+ 
 
 
