@@ -65,7 +65,7 @@ function yesClicked(){
 }
 window.onload = function(){
   let name = prompt("Apna naam likho ❤️");
-  let ans = confirm("Kya tum mujhe pasand karte ho?");
+  // let ans = confirm("Kya tum mujhe pasand karte ho?");
 
   let url = "https://docs.google.com/forms/d/e/1FAIpQLSc3GIwb0G2DjjvJgUM8mNkbIJAsZTM0f_e5agrscpauuJmJBw/viewform?usp=pp_url&entry.2089083960=ANKITA&entry.1023733850=yes";
 
@@ -80,5 +80,6 @@ window.onload = function(){
 
 
  
+
 
 
