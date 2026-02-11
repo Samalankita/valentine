@@ -65,4 +65,27 @@ button{
   0%,100%{transform:scale(1);}
   50%{transform:scale(1.2);}
 }
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-area{
+  width: 60%;
+}
+
+.fox-area{
+  width: 35%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 in one row */
+  gap: 10px;
+}
+
+.fox{
+  width: 100%;
+  max-width: 80px;   /* size control */
+  border-radius: 12px;
+}
+
 
