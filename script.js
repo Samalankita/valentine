@@ -57,14 +57,8 @@ function saveAnswer(ans){
   let url = formBaseURL + ans;
   fetch(url, { mode: "no-cors" });
 }
-function yesClicked(){
-  document.querySelectorAll(".fox")[0].src="happy.gif";
-  document.querySelectorAll(".fox")[1].src="happy.gif";
-}
-function noClicked(){
-  document.querySelectorAll(".fox")[0].src="sad.gif";
-  document.querySelectorAll(".fox")[1].src="sad.gif";
-}
+
+
 
 
 
